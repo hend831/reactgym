@@ -1,0 +1,31 @@
+#programs{
+    color:#252A34;
+    
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+  }
+  .m-heading{
+    margin-bottom: 5rem;
+  }
+  #programs .boxes{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+  }
+  #programs .boxes .box{
+    flex: 1;
+    padding: 1rem;
+  }
+  #programs .boxes .box img{
+    width: 70px;
+    background-color:#08D9D6;
+    padding: 0.5rem;
+    border-radius:100%;
+  }
+
+  @media (max-width: 960px) {
+    .boxes{
+      flex-direction: column;
+    }
+    
+  }

@@ -1,0 +1,85 @@
+.logo {
+  height: 1.1rem;
+  margin-bottom: 1rem;
+  margin-left: 1.3rem;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#navbar .logo img {
+  height: 2.1rem;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  margin-top: 0.75rem;
+  margin-right: 1.3rem;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+#navbar ul li a:hover {
+  background-color: #08d9d6;
+  border-radius: 5px;
+}
+
+.nav-toggle {
+  display: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 1.3rem;
+}
+
+@media (max-width: 960px) {
+  #navbar {
+    flex-direction: row-reverse; /* عرض العناصر من اليمين إلى اليسار */
+    justify-content: space-between; /* توسيط الشعار والأيقونة في الوسط */
+    align-items: center;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    opacity: 0;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    background-color: #343a40;
+  }
+
+  .nav-links.show-nav {
+    display: flex;
+    flex-direction: column;
+    opacity: 100%;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .nav-links li a {
+    padding: 0.5rem;
+    
+  }
+
+
+}
